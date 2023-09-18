@@ -4,14 +4,11 @@ import { Card } from './Card/Card';
 import { SearchForm } from './SearchForm/SearchForm';
 
 export const App = () => {
-  console.log(advertsCars.sort((a, b) => a.id - b.id));
-  const oneCar = advertsCars[10];
-  console.log(oneCar);
-  const rentalPrices = advertsCars.map(({ id, rentalPrice }) => ({
-    id,
-    rentalPrice,
-  }));
-  console.log(rentalPrices);
+  // console.log(advertsCars.sort((a, b) => a.id - b.id));
+  // const oneCar = advertsCars[10];
+  // console.log(oneCar);
+  const rentalPrices = advertsCars.map(({ rentalPrice }) => rentalPrice);
+  // console.log(rentalPrices);
   return (
     <div
       style={{
