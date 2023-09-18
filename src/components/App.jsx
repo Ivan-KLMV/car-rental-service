@@ -1,111 +1,38 @@
 import advertsCars from '../data/advertsCars.json';
+import makes from '../data/makes.json';
+import { Card } from './Card/Card';
+import { SearchForm } from './SearchForm/SearchForm';
 
 export const App = () => {
   console.log(advertsCars.sort((a, b) => a.id - b.id));
   const oneCar = advertsCars[10];
   console.log(oneCar);
-
+  const rentalPrices = advertsCars.map(({ id, rentalPrice }) => ({
+    id,
+    rentalPrice,
+  }));
+  console.log(rentalPrices);
   return (
     <div
       style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        // fontSize: 40,
-        color: '#010101',
+        // height: '100vh',
+        maxWidth: '1440px',
+        padding: '150px 128px',
       }}
     >
+      <SearchForm {...{ makes, rentalPrices }} />
       <div
         style={{
-          outline: '1px solid  darkblue',
-
           display: 'flex',
-          flexDirection: 'column',
-          gap: '14px',
-          width: '274px',
-          height: '426px',
+          flexWrap: 'wrap',
+          columnGap: '29px',
+          rowGap: '50px',
+          justifyContent: 'center',
         }}
       >
-        <div
-          style={{
-            width: '100%',
-            height: '268px',
-            // marginBottom: '14px',
-            borderRadius: 14,
-            overflow: 'hidden',
-          }}
-        >
-          <img
-            src={oneCar.img}
-            alt={oneCar.model}
-            style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-          />
-        </div>
-        <div
-          style={{
-            display: 'flex',
-            flexGrow: 1,
-            flexDirection: 'column',
-            gap: '8px',
-          }}
-        >
-          <div
-            style={{
-              display: 'flex',
-              justifyContent: 'space-between',
-              fontSize: '16px',
-              lineHeight: 1.5,
-            }}
-          >
-            <p>
-              {oneCar.make} <span>{oneCar.model}</span>, {oneCar.year}
-            </p>
-            <p>{oneCar.rentalPrice}</p>
-          </div>
-          <div
-            style={{
-              display: 'flex',
-              flexDirection: 'column',
-              justifyContent: 'space-between',
-              flexGrow: 1,
-            }}
-          >
-            <ul
-              style={{
-                display: 'flex',
-                fontSize: '12px',
-                lineHeight: 1.5,
-                color: 'rgba(18, 20, 23, 0.50)',
-
-                flexWrap: 'wrap',
-                columnGap: '12px',
-                rowGap: '4px',
-              }}
-            >
-              <li>{oneCar.address.split(',')[1]}</li>
-              <li>{oneCar.address.split(',')[2]}</li>
-              <li>{oneCar.rentalCompany}</li>
-              <li>{oneCar.type}</li>
-              <li>{oneCar.model}</li>
-              <li>{oneCar.id}</li>
-              <li>{oneCar.accessories[1].split(' ').splice(2, 2).join(' ')}</li>
-            </ul>
-            <button
-              type="button"
-              style={{
-                width: '100%',
-                fontSize: '14px',
-                paddingTop: '12px',
-                paddingBottom: '12px',
-
-                borderRadius: 12,
-              }}
-            >
-              Learn more
-            </button>
-          </div>
-        </div>
+        {advertsCars.map(car => (
+          <Card key={car.id} {...car} />
+        ))}
       </div>
     </div>
   );
