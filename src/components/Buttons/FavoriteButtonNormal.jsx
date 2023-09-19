@@ -1,5 +1,4 @@
 import { HeartActive, HeartNormal } from 'components/Svg/Svg';
-import { useGetCarsByIdQuery } from 'redux/carsSlice';
 import styled from 'styled-components';
 
 export const FavoriteButtonNormal = ({ isActive, handleClick }) => {
