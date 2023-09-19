@@ -1,6 +1,6 @@
 [
   {
-    "id": 9582,
+    "id": "9582",
     "year": 2008,
     "make": "Buick",
     "model": "Enclave",
@@ -26,7 +26,7 @@
     "mileage": 5858
   },
   {
-    "id": 9584,
+    "id": "9584",
     "year": 2019,
     "make": "Volvo",
     "model": "XC90",
@@ -52,7 +52,7 @@
     "mileage": 5352
   },
   {
-    "id": 9586,
+    "id": "9586",
     "year": 2020,
     "make": "Volvo",
     "model": "XC60",
@@ -78,7 +78,7 @@
     "mileage": 5966
   },
   {
-    "id": 9587,
+    "id": "9587",
     "year": 2006,
     "make": "HUMMER",
     "model": "H2",
@@ -104,7 +104,7 @@
     "mileage": 4771
   },
   {
-    "id": 9590,
+    "id": "9590",
     "year": 2016,
     "make": "Subaru",
     "model": "Outback",
@@ -130,7 +130,7 @@
     "mileage": 4061
   },
   {
-    "id": 9591,
+    "id": "9591",
     "year": 2010,
     "make": "Mitsubishi",
     "model": "Outlander",
@@ -156,7 +156,7 @@
     "mileage": 5374
   },
   {
-    "id": 9593,
+    "id": "9593",
     "year": 2014,
     "make": "Nissan",
     "model": "Pathfinder",
@@ -182,7 +182,7 @@
     "mileage": 6282
   },
   {
-    "id": 9596,
+    "id": "9596",
     "year": 2009,
     "make": "Lincoln",
     "model": "Navigator L",
@@ -208,7 +208,7 @@
     "mileage": 6173
   },
   {
-    "id": 9597,
+    "id": "9597",
     "year": 2000,
     "make": "GMC",
     "model": "Yukon Denali",
@@ -234,7 +234,7 @@
     "mileage": 4989
   },
   {
-    "id": 9598,
+    "id": "9598",
     "year": 2007,
     "make": "Hyundai",
     "model": "Tucson",
@@ -260,7 +260,7 @@
     "mileage": 4591
   },
   {
-    "id": 9583,
+    "id": "9583",
     "year": 2006,
     "make": "MINI",
     "model": "Convertible",
@@ -286,7 +286,7 @@
     "mileage": 6275
   },
   {
-    "id": 9606,
+    "id": "9606",
     "year": 2007,
     "make": "Bentley",
     "model": "Azure",
@@ -312,7 +312,7 @@
     "mileage": 4317
   },
   {
-    "id": 9612,
+    "id": "9612",
     "year": 2004,
     "make": "Mercedes-Benz",
     "model": "SL-Class",
@@ -338,7 +338,7 @@
     "mileage": 5722
   },
   {
-    "id": 9616,
+    "id": "9616",
     "year": 2010,
     "make": "Aston Martin",
     "model": "DBS",
@@ -364,7 +364,7 @@
     "mileage": 6464
   },
   {
-    "id": 9619,
+    "id": "9619",
     "year": 1996,
     "make": "Pontiac",
     "model": "Firebird",
@@ -390,7 +390,7 @@
     "mileage": 5091
   },
   {
-    "id": 9629,
+    "id": "9629",
     "year": 2009,
     "make": "Lamborghini",
     "model": "Murcielago",
@@ -416,7 +416,7 @@
     "mileage": 5832
   },
   {
-    "id": 9631,
+    "id": "9631",
     "year": 2011,
     "make": "Audi",
     "model": "A5",
@@ -442,7 +442,7 @@
     "mileage": 4635
   },
   {
-    "id": 9634,
+    "id": "9634",
     "year": 2001,
     "make": "BMW",
     "model": "Z8",
@@ -468,7 +468,7 @@
     "mileage": 5990
   },
   {
-    "id": 9655,
+    "id": "9655",
     "year": 1998,
     "make": "Chevrolet",
     "model": "Camaro",
@@ -494,7 +494,7 @@
     "mileage": 6330
   },
   {
-    "id": 9685,
+    "id": "9685",
     "year": 2006,
     "make": "Mercedes-Benz",
     "model": "SLK-Class",
@@ -520,12 +520,12 @@
     "mileage": 6280
   },
   {
-    "id": 9660,
+    "id": "9660",
     "year": 2020,
     "make": "Chrysler",
     "model": "Voyager",
     "type": "Van/Minivan",
-    "photoLink": "https://res.cloudinary.com/ditdqzoio/image/upload/v1687252635/cars/chrysler_voyager.jpg",
+    "img": "https://res.cloudinary.com/ditdqzoio/image/upload/v1687252635/cars/chrysler_voyager.jpg",
     "description": "The Chrysler Voyager is a practical and versatile van/minivan that provides comfortable seating, ample cargo space, and a range of convenient features for family-oriented transportation.",
     "fuelConsumption": "8.2",
     "engineSize": "3.6L V6",
@@ -546,12 +546,12 @@
     "mileage": 5807
   },
   {
-    "id": 9630,
+    "id": "9630",
     "year": 2020,
     "make": "Kia",
     "model": "Rio",
     "type": "Hatchback",
-    "photoLink": "https://res.cloudinary.com/ditdqzoio/image/upload/v1687252635/cars/kia_rio_hatchback.jpg",
+    "img": "https://res.cloudinary.com/ditdqzoio/image/upload/v1687252635/cars/kia_rio_hatchback.jpg",
     "description": "The Kia Rio is a compact and fuel-efficient hatchback that offers a blend of affordability, reliability, and practicality, making it an excellent choice for urban commuting and everyday driving.",
     "fuelConsumption": "6.2",
     "engineSize": "1.6L 4-cylinder",
@@ -572,12 +572,12 @@
     "mileage": 4618
   },
   {
-    "id": 9686,
+    "id": "9686",
     "year": 2020,
     "make": "Volvo",
     "model": "XC60",
     "type": "SUV",
-    "photoLink": "https://res.cloudinary.com/ditdqzoio/image/upload/v1687252635/cars/volvo_xc60_2.jpg",
+    "img": "https://res.cloudinary.com/ditdqzoio/image/upload/v1687252635/cars/volvo_xc60_2.jpg",
     "description": "The Volvo XC60 is a luxurious and versatile SUV that combines Scandinavian design, advanced safety features, and a comfortable driving experience, making it an ideal choice for families and adventure enthusiasts.",
     "fuelConsumption": "8.5",
     "engineSize": "2.0L 4-cylinder",
@@ -598,12 +598,12 @@
     "mileage": 6618
   },
   {
-    "id": 9618,
+    "id": "9618",
     "year": 2020,
     "make": "Land Rover",
     "model": "Range Rover Sport",
     "type": "SUV",
-    "photoLink": "https://res.cloudinary.com/ditdqzoio/image/upload/v1687252635/cars/land_rover_range_rover_sport.jpg",
+    "img": "https://res.cloudinary.com/ditdqzoio/image/upload/v1687252635/cars/land_rover_range_rover_sport.jpg",
     "description": "The Land Rover Range Rover Sport is a premium SUV that offers a perfect blend of luxury, off-road capability, and dynamic performance, providing a refined driving experience both on and off the road.",
     "fuelConsumption": "11.8",
     "engineSize": "3.0L V6",
@@ -624,12 +624,12 @@
     "mileage": 4856
   },
   {
-    "id": 9632,
+    "id": "9632",
     "year": 2020,
     "make": "Kia",
     "model": "Rio",
     "type": "Sedan",
-    "photoLink": "https://res.cloudinary.com/ditdqzoio/image/upload/v1687252635/cars/kia_rio_sedan_hatchback.jpg",
+    "img": "https://res.cloudinary.com/ditdqzoio/image/upload/v1687252635/cars/kia_rio_sedan_hatchback.jpg",
     "description": "The Kia Rio is a versatile and fuel-efficient vehicle available in both sedan and hatchback body styles, offering a comfortable cabin, modern features, and a smooth driving experience, making it an attractive choice for urban commuters.",
     "fuelConsumption": "6.2",
     "engineSize": "1.6L 4-cylinder",
