@@ -6,6 +6,7 @@ export const App = () => {
   const { data: rentalCars, error, isLoading } = useGetCarsQuery();
   // console.log('data', rentalCars);
   console.log('isLoading', isLoading);
+  console.log(error);
   // console.log(advertsCars.sort((a, b) => a.id - b.id));
 
   const rentalPrices =
