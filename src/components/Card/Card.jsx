@@ -1,10 +1,25 @@
+import { Button } from 'components/Buttons/ButtonStytled';
+import { FavoriteButtonNormal } from 'components/Buttons/FavoriteButtonNormal';
+import { useAddToFavoriteCarMutation } from 'redux/carsSlice';
 import styled from 'styled-components';
-import { Button } from '../Button/Button';
 
 export const Card = props => {
+  const [addToFavorite] = useAddToFavoriteCarMutation();
+  const handleClick = value => {
+    console.log(value);
+    addToFavorite({ id: props.id, ...value, favorite: !value?.favorite });
+    // return value;
+  };
+
   return (
     <CardStyled>
       <ImageThumbStyled>
+        <FavoriteButtonNormal
+          isActive={props.favorite}
+          handleClick={() => {
+            handleClick(props);
+          }}
+        />
         <ImgStyled src={props.img} alt={props.model} />
       </ImageThumbStyled>
       <DescriptionContainer>
@@ -41,6 +56,7 @@ const CardStyled = styled.div`
 `;
 
 const ImageThumbStyled = styled.div`
+  position: relative;
   width: 100%;
   height: 268px;
   border-radius: 14px;
