@@ -20,7 +20,7 @@ export const DatalistInputTwo = ({
   const focusTogler = () => {
     const timeoutId = setTimeout(() => {
       setIsActive(state => !state);
-    }, 200);
+    }, 250);
 
     return () => clearTimeout(timeoutId);
   };
