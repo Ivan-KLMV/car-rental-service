@@ -1,20 +1,26 @@
 import { useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
-
-import advertsCars from '../../data/advertsCars.json';
-import makes from '../../data/makes.json';
 import styled from 'styled-components';
 
-export const DatalistInputTwo = () => {
+export const DatalistInputTwo = ({
+  labelText,
+  dropdownData,
+  inputHandler,
+  placeholderText,
+  inpuWwidth,
+}) => {
   const [isActive, setIsActive] = useState(false);
   const [filter, setFilter] = useState('');
-  const filteredMakes = makes.filter(make =>
+  // console.log('DatalistInputTwo', dropdownData);
+
+  const filteredData = dropdownData.filter(make =>
     make.toLowerCase().includes(filter.toLowerCase())
   );
+
   const focusTogler = () => {
     const timeoutId = setTimeout(() => {
       setIsActive(state => !state);
-    }, 250);
+    }, 100);
 
     return () => clearTimeout(timeoutId);
   };
@@ -22,62 +28,35 @@ export const DatalistInputTwo = () => {
   const filterHandler = e => {
     e.preventDefault();
     const filter = e.target;
-    // console.log(filter.value);
+
     setFilter(filter.value);
   };
 
   const onClickHandler = e => {
     e.preventDefault();
     const make = e.target;
-    console.dir(make.innerText);
+
     setFilter(make.innerText);
+    inputHandler(make.innerText);
   };
 
   return (
-    <div
-      style={{
-        display: 'flex',
-        flexDirection: 'column',
-        gap: 8,
-        position: 'relative',
-        flexBasis: '224px',
-      }}
-    >
-      <LableStyled htmlFor="car-brand">Car brand</LableStyled>
+    <InputContainer style={{ maxWidth: inpuWwidth }}>
+      <LableStyled htmlFor={labelText}>{labelText}</LableStyled>
       <InputStyled
-        id="car-brand"
+        id={labelText}
         onFocus={focusTogler}
         onBlur={focusTogler}
         onChange={filterHandler}
         value={filter}
-        placeholder="Enter the text"
+        placeholder={placeholderText}
         autoComplete="off"
       />
       {isActive && (
-        <DropdownBox
-        // style={{
-        //   boxSizing: 'border-box',
-        //   position: 'absolute',
-        //   top: '100%',
-        //   width: '100%',
-        //   maxHeight: '272px',
-        //   padding: '14px 8px 14px 18px',
-        //   backgroundColor: 'whitesmoke',
-        // }}
-        >
-          <DropdownList
-            style={{
-              display: 'flex',
-              flexDirection: 'column',
-              gap: 8,
-              maxHeight: '244px',
-              overflow: 'auto',
-
-              color: 'rgba(18, 20, 23, 0.2)',
-            }}
-          >
-            {filteredMakes.length
-              ? filteredMakes.map(car => (
+        <DropdownBox>
+          <DropdownList>
+            {filteredData.length
+              ? filteredData.map(car => (
                   <li key={uuidv4()} onClick={onClickHandler}>
                     {car}
                   </li>
@@ -86,9 +65,17 @@ export const DatalistInputTwo = () => {
           </DropdownList>
         </DropdownBox>
       )}
-    </div>
+    </InputContainer>
   );
 };
+
+const InputContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  position: relative;
+  flex-basis: 224px;
+`;
 
 const LableStyled = styled.label`
   color: #8a8a89;
@@ -96,13 +83,13 @@ const LableStyled = styled.label`
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
-  line-height: 18px; /* 128.571% */
+  line-height: 1.285;
 `;
 
 const InputStyled = styled.input`
   width: 100%;
   box-sizing: border-box;
-  padding: 14px 89px 14px 18px;
+  padding: 14px 18px;
   border: unset;
   border-radius: 14px;
   background: #f7f7fb;
@@ -115,8 +102,14 @@ const InputStyled = styled.input`
   &::placeholder {
     color: rgba(18, 20, 23, 1);
   }
+
+  &:focus-visible {
+    outline: 1px solid rgba(138, 138, 137, 0.2);
+  }
 `;
+
 const DropdownBox = styled.div`
+  z-index: 999;
   position: absolute;
   top: 100%;
   width: 100%;
