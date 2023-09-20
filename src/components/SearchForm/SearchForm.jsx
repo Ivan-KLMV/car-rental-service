@@ -12,18 +12,18 @@ export const SearchForm = ({ onSubmitHandler }) => {
   const [selectedMileageFrom, setSelectedMileageFrom] = useState(0);
   const [selectedMileageTo, setSelectedMileageTo] = useState(0);
   const handleChangeCar = values => {
-    console.log('in form car', values);
+    // console.log('in form car', values);
     setSelectedCar(values);
   };
 
   const handleChangePrice = values => {
-    console.log('in form price', values);
+    // console.log('in form price', values);
 
     setSelectedPrice(values);
   };
 
   const handleChangeMileage = values => {
-    console.log('in form mileage from', values);
+    // console.log('in form mileage from', values);
 
     if (values.name === 'from') {
       return setSelectedMileageFrom(Number(values.value));
