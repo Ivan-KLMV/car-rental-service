@@ -1,14 +1,22 @@
 import { Button } from 'components/Buttons/ButtonStytled';
 import { FavoriteButtonNormal } from 'components/Buttons/FavoriteButtonNormal';
+import { Modal } from 'components/Modal/Modal';
+import { useState } from 'react';
 import { useAddToFavoriteCarMutation } from 'redux/carsSlice';
 import styled from 'styled-components';
+import { SingleCard } from './SingaleCard';
 
 export const Card = props => {
+  const [showModal, setShowModal] = useState(false);
   const [addToFavorite] = useAddToFavoriteCarMutation();
+
   const handleClick = value => {
-    console.log(value);
+    console.log(value.id);
     addToFavorite({ id: props.id, ...value, favorite: !value?.favorite });
-    // return value;
+  };
+  const toggleModal = () => {
+    setShowModal(showModal => !showModal);
+    // setLargeImageURL(link);
   };
 
   return (
@@ -40,9 +48,14 @@ export const Card = props => {
             <li>{props.id}</li>
             <li>{props.accessories[1].split(' ').splice(2, 2).join(' ')}</li>
           </SecondaryDesriptionList>
-          <Button>Learn more</Button>
+          <Button onClick={toggleModal}>Learn more</Button>
         </BottomDescriptionContainer>
       </DescriptionContainer>
+      {showModal && (
+        <Modal onClickProp={toggleModal}>
+          <SingleCard {...props} />
+        </Modal>
+      )}
     </CardStyled>
   );
 };

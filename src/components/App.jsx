@@ -1,41 +1,65 @@
-import { useGetCarsQuery } from 'redux/carsSlice';
-import { Card } from './Card/Card';
+import { CatalogPage } from 'pages/CatalogPage';
+import { FavoritesPage } from 'pages/FavoritesPage';
+import { NavLink, Route, Routes } from 'react-router-dom';
 import { SearchForm } from './SearchForm/SearchForm';
+import { useState } from 'react';
+import styled from 'styled-components';
 
 export const App = () => {
-  const { data: rentalCars, error, isLoading } = useGetCarsQuery();
-  // console.log('data', rentalCars);
-  console.log('isLoading', isLoading);
-  console.log(error);
-  // console.log(advertsCars.sort((a, b) => a.id - b.id));
+  const [searchQuery, setSearchQuery] = useState({});
 
-  const rentalPrices =
-    rentalCars && rentalCars.map(({ rentalPrice }) => rentalPrice);
-  // console.log(rentalPrices);
+  const searchHendler = values => {
+    console.log('search values', values);
+    setSearchQuery(values);
+  };
   return (
-    rentalCars && (
+    <>
+      <div
+        style={{ backgroundColor: 'rgba(52, 112, 255, 1)', marginBottom: 50 }}
+      >
+        <NavBar>
+          <NavLink to="/" end>
+            Home
+          </NavLink>
+          <NavLink to="/catalog">Catalog</NavLink>
+          <NavLink to="/favorites">Favorites</NavLink>
+        </NavBar>
+      </div>
       <div
         style={{
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'center',
           maxWidth: '1440px',
-          padding: '150px 128px',
+          padding: '0 128px 150px 128px',
+          margin: '0 auto',
+          overflowX: 'unset',
         }}
       >
-        <SearchForm {...{ rentalPrices }} />
-        <div
-          style={{
-            display: 'flex',
-            flexWrap: 'wrap',
-            columnGap: '29px',
-            rowGap: '50px',
-            justifyContent: 'center',
-            '&:lastChild': { justifyContent: 'flex-start' },
-          }}
-        >
-          {rentalCars.map(car => (
-            <Card key={car.id} {...car} />
-          ))}
-        </div>
+        <SearchForm onSubmitHandler={searchHendler} />
+
+        <Routes>
+          <Route path="/" element={<div>Home Page</div>} />
+          <Route
+            path="/catalog"
+            element={<CatalogPage searchQuery={searchQuery} />}
+          />
+          <Route path="/favorites" element={<FavoritesPage />} />
+          <Route path="*" element={<>Not Found</>} />
+        </Routes>
       </div>
-    )
+    </>
   );
 };
+
+const NavBar = styled.nav`
+  display: flex;
+  font-weight: 600;
+  color: white;
+  font-size: 38px;
+  height: 100px;
+  max-width: 1440px;
+  margin: 0px auto;
+  align-items: center;
+  gap: 20px;
+`;

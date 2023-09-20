@@ -4,18 +4,20 @@ import styled from 'styled-components';
 
 export const DatalistInputTwo = ({
   labelText,
-  dropdownData,
   inputHandler,
   placeholderText,
   inpuWwidth,
+  dropdownData,
 }) => {
   const [isActive, setIsActive] = useState(false);
   const [filter, setFilter] = useState('');
-  // console.log('DatalistInputTwo', dropdownData);
 
-  const filteredData = dropdownData.filter(make =>
-    make.toLowerCase().includes(filter.toLowerCase())
-  );
+  const filteredData = dropdownData?.filter(make => {
+    if (typeof make === 'string') {
+      return make.toLowerCase().includes(filter.toLowerCase());
+    }
+    return make;
+  });
 
   const focusTogler = () => {
     const timeoutId = setTimeout(() => {

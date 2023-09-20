@@ -1,12 +1,18 @@
 import { HeartActive, HeartNormal } from 'components/Svg/Svg';
+import { useState } from 'react';
 import styled from 'styled-components';
 
 export const FavoriteButtonNormal = ({ isActive, handleClick }) => {
-  //   const { data } = useGetCarsByIdQuery(handleClick, { skip: handleClick });
-  //   console.log(data);
+  const [isFavorite, setIsFavorite] = useState(isActive);
+
+  const favHandler = () => {
+    setIsFavorite(!isFavorite);
+    handleClick();
+  };
+
   return (
-    <FavButtonStyled type="button" onClick={handleClick}>
-      {isActive ? <HeartActive /> : <HeartNormal />}
+    <FavButtonStyled type="button" onClick={favHandler}>
+      {isFavorite ? <HeartActive /> : <HeartNormal />}
     </FavButtonStyled>
   );
 };
@@ -21,4 +27,9 @@ const FavButtonStyled = styled.button`
   padding: 0;
   border: unset;
   background: unset;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+  }
 `;

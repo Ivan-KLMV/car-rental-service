@@ -19,11 +19,12 @@
       "Remote start",
       "Blind-spot monitoring"
     ],
-    "rentalPrice": "$40",
+    "rentalPrice": "40",
     "rentalCompany": "Luxury Car Rentals",
     "address": "123 Example Street, Kiev, Ukraine",
     "rentalConditions": "Minimum age: 25\nValid driver's license\nSecurity deposit required",
-    "mileage": 5858
+    "mileage": 5858,
+    "favorite": true
   },
   {
     "id": "9584",
@@ -45,11 +46,12 @@
       "Pilot Assist semi-autonomous driving",
       "Four-zone automatic climate control"
     ],
-    "rentalPrice": "$50",
+    "rentalPrice": "50",
     "rentalCompany": "Premium Auto Rentals",
     "address": "456 Example Avenue, Lviv, Ukraine",
     "rentalConditions": "Minimum age: 21\nValid driver's license\nProof of insurance required",
-    "mileage": 5352
+    "mileage": 5352,
+    "favorite": false
   },
   {
     "id": "9586",
@@ -71,11 +73,12 @@
       "Pilot Assist with adaptive cruise control",
       "9-inch Sensus touchscreen infotainment system"
     ],
-    "rentalPrice": "$45",
+    "rentalPrice": "45",
     "rentalCompany": "Luxury Car Rentals",
     "address": "789 Example Boulevard, Odessa, Ukraine",
     "rentalConditions": "Minimum age: 23\nValid driver's license\nCredit card required",
-    "mileage": 5966
+    "mileage": 5966,
+    "favorite": false
   },
   {
     "id": "9587",
@@ -97,11 +100,12 @@
       "Stabilitrak stability control",
       "Tire pressure monitoring system"
     ],
-    "rentalPrice": "$55",
+    "rentalPrice": "55",
     "rentalCompany": "Adventure Car Rentals",
     "address": "321 Example Road, Kharkiv, Ukraine",
     "rentalConditions": "Minimum age: 25\nValid driver's license\nSecurity deposit required",
-    "mileage": 4771
+    "mileage": 4771,
+    "favorite": false
   },
   {
     "id": "9590",
@@ -123,11 +127,12 @@
       "X-Mode off-road assist",
       "Subaru EyeSight driver-assist system"
     ],
-    "rentalPrice": "$35",
+    "rentalPrice": "35",
     "rentalCompany": "Adventure Car Rentals",
     "address": "987 Example Street, Kyiv, Ukraine",
     "rentalConditions": "Minimum age: 21\nValid driver's license\nCredit card required",
-    "mileage": 4061
+    "mileage": 4061,
+    "favorite": false
   },
   {
     "id": "9591",
@@ -149,11 +154,12 @@
       "Multi-View camera system",
       "Bluetooth hands-free system"
     ],
-    "rentalPrice": "$30",
+    "rentalPrice": "30",
     "rentalCompany": "City Car Rentals",
     "address": "654 Example Avenue, Lviv, Ukraine",
     "rentalConditions": "Minimum age: 21\nValid driver's license\nProof of insurance required",
-    "mileage": 5374
+    "mileage": 5374,
+    "favorite": false
   },
   {
     "id": "9593",
@@ -175,11 +181,12 @@
       "Advanced Drive-Assist Display",
       "Nissan Intelligent Key with push-button ignition"
     ],
-    "rentalPrice": "$40",
+    "rentalPrice": "40",
     "rentalCompany": "Luxury Car Rentals",
     "address": "321 Example Road, Odessa, Ukraine",
     "rentalConditions": "Minimum age: 25\nValid driver's license\nSecurity deposit required",
-    "mileage": 6282
+    "mileage": 6282,
+    "favorite": false
   },
   {
     "id": "9596",
@@ -201,11 +208,12 @@
       "Voice-Activated Navigation System",
       "Power liftgate"
     ],
-    "rentalPrice": "$50",
+    "rentalPrice": "50",
     "rentalCompany": "Elite Car Rentals",
     "address": "123 Example Boulevard, Kharkiv, Ukraine",
     "rentalConditions": "Minimum age: 25\nValid driver's license\nInsurance coverage required",
-    "mileage": 6173
+    "mileage": 6173,
+    "favorite": false
   },
   {
     "id": "9597",
@@ -227,11 +235,12 @@
       "Adaptive suspension",
       "Advanced safety features"
     ],
-    "rentalPrice": "$45",
+    "rentalPrice": "45",
     "rentalCompany": "Premium Car Rentals",
     "address": "789 Example Square, Dnipro, Ukraine",
     "rentalConditions": "Minimum age: 25\nValid driver's license\nSecurity deposit required",
-    "mileage": 4989
+    "mileage": 4989,
+    "favorite": false
   },
   {
     "id": "9598",
@@ -253,11 +262,12 @@
       "Hillstart Assist Control",
       "LED headlights"
     ],
-    "rentalPrice": "$25",
+    "rentalPrice": "25",
     "rentalCompany": "Economy Car Rentals",
     "address": "456 Example Lane, Zaporizhzhia, Ukraine",
     "rentalConditions": "Minimum age: 21\nValid driver's license\nCredit card required",
-    "mileage": 4591
+    "mileage": 4591,
+    "favorite": true
   },
   {
     "id": "9583",
@@ -279,11 +289,12 @@
       "Dynamic Stability Control",
       "Rain-sensing wipers"
     ],
-    "rentalPrice": "$30",
+    "rentalPrice": "30",
     "rentalCompany": "Fun Car Rentals",
     "address": "234 Example Place, Vinnytsia, Ukraine",
     "rentalConditions": "Minimum age: 21\nValid driver's license\nProof of insurance required",
-    "mileage": 6275
+    "mileage": 6275,
+    "favorite": false
   },
   {
     "id": "9606",
@@ -305,11 +316,12 @@
       "Air suspension",
       "Automatic convertible roof"
     ],
-    "rentalPrice": "$150",
+    "rentalPrice": "150",
     "rentalCompany": "Luxury Car Rentals",
     "address": "567 Example Street, Lviv, Ukraine",
     "rentalConditions": "Minimum age: 30\nValid driver's license\nSecurity deposit and insurance required",
-    "mileage": 4317
+    "mileage": 4317,
+    "favorite": false
   },
   {
     "id": "9612",
@@ -331,11 +343,12 @@
       "Retractable hardtop roof",
       "Multi-contour seats"
     ],
-    "rentalPrice": "$75",
+    "rentalPrice": "75",
     "rentalCompany": "Exquisite Car Rentals",
     "address": "789 Example Boulevard, Kyiv, Ukraine",
     "rentalConditions": "Minimum age: 25\nValid driver's license\nSecurity deposit and proof of insurance required",
-    "mileage": 5722
+    "mileage": 5722,
+    "favorite": false
   },
   {
     "id": "9616",
@@ -357,11 +370,12 @@
       "Carbon-fiber body panels",
       "Adaptive Damping System"
     ],
-    "rentalPrice": "$200",
+    "rentalPrice": "200",
     "rentalCompany": "Supreme Car Rentals",
     "address": "123 Example Avenue, Odessa, Ukraine",
     "rentalConditions": "Minimum age: 30\nValid driver's license\nSecurity deposit and insurance required",
-    "mileage": 6464
+    "mileage": 6464,
+    "favorite": true
   },
   {
     "id": "9619",
@@ -383,11 +397,12 @@
       "Limited-slip differential",
       "High-performance exhaust"
     ],
-    "rentalPrice": "$50",
+    "rentalPrice": "50",
     "rentalCompany": "Classic Car Rentals",
     "address": "456 Example Street, Lviv, Ukraine",
     "rentalConditions": "Minimum age: 25\nValid driver's license\nSecurity deposit required",
-    "mileage": 5091
+    "mileage": 5091,
+    "favorite": false
   },
   {
     "id": "9629",
@@ -409,11 +424,12 @@
       "Electronic Stability Control",
       "Retractable soft-top roof"
     ],
-    "rentalPrice": "$500",
+    "rentalPrice": "500",
     "rentalCompany": "Supercar Rentals",
     "address": "321 Example Road, Kharkiv, Ukraine",
     "rentalConditions": "Minimum age: 30\nValid driver's license\nSecurity deposit and insurance required",
-    "mileage": 5832
+    "mileage": 5832,
+    "favorite": true
   },
   {
     "id": "9631",
@@ -435,11 +451,12 @@
       "Quattro all-wheel drive available",
       "Power-folding acoustic soft-top"
     ],
-    "rentalPrice": "$150",
+    "rentalPrice": "150",
     "rentalCompany": "Luxury Car Rentals",
     "address": "987 Example Lane, Dnipro, Ukraine",
     "rentalConditions": "Minimum age: 25\nValid driver's license\nSecurity deposit and insurance required",
-    "mileage": 4635
+    "mileage": 4635,
+    "favorite": false
   },
   {
     "id": "9634",
@@ -461,11 +478,12 @@
       "Dynamic Stability Control",
       "Power-operated soft-top roof"
     ],
-    "rentalPrice": "$300",
+    "rentalPrice": "300",
     "rentalCompany": "Classic Car Rentals",
     "address": "654 Example Circle, Zaporizhzhia, Ukraine",
     "rentalConditions": "Minimum age: 25\nValid driver's license\nSecurity deposit and proof of insurance required",
-    "mileage": 5990
+    "mileage": 5990,
+    "favorite": false
   },
   {
     "id": "9655",
@@ -487,11 +505,12 @@
       "Limited-slip differential",
       "Power-operated convertible top"
     ],
-    "rentalPrice": "$200",
+    "rentalPrice": "200",
     "rentalCompany": "Muscle Car Rentals",
     "address": "123 Example Street, Lviv, Ukraine",
     "rentalConditions": "Minimum age: 25\nValid driver's license\nSecurity deposit and insurance required",
-    "mileage": 6330
+    "mileage": 6330,
+    "favorite": false
   },
   {
     "id": "9685",
@@ -513,11 +532,12 @@
       "Dynamic Stability Control",
       "Retractable hardtop roof"
     ],
-    "rentalPrice": "$250",
+    "rentalPrice": "250",
     "rentalCompany": "Luxury Car Rentals",
     "address": "456 Example Avenue, Kyiv, Ukraine",
     "rentalConditions": "Minimum age: 25\nValid driver's license\nSecurity deposit and insurance required",
-    "mileage": 6280
+    "mileage": 6280,
+    "favorite": false
   },
   {
     "id": "9660",
@@ -539,11 +559,12 @@
       "Electronic Stability Control",
       "Power sliding side doors"
     ],
-    "rentalPrice": "$100",
+    "rentalPrice": "100",
     "rentalCompany": "Family Car Rentals",
     "address": "789 Example Boulevard, Odesa, Ukraine",
     "rentalConditions": "Minimum age: 21\nValid driver's license\nSecurity deposit and insurance required",
-    "mileage": 5807
+    "mileage": 5807,
+    "favorite": false
   },
   {
     "id": "9630",
@@ -565,11 +586,12 @@
       "Electronic Stability Control",
       "Rearview camera"
     ],
-    "rentalPrice": "$50",
+    "rentalPrice": "50",
     "rentalCompany": "Economy Car Rentals",
     "address": "321 Example Lane, Kharkiv, Ukraine",
     "rentalConditions": "Minimum age: 21\nValid driver's license\nSecurity deposit and insurance required",
-    "mileage": 4618
+    "mileage": 4618,
+    "favorite": false
   },
   {
     "id": "9686",
@@ -591,11 +613,12 @@
       "City Safety collision avoidance technology",
       "Power tailgate"
     ],
-    "rentalPrice": "$150",
+    "rentalPrice": "150",
     "rentalCompany": "Premium Car Rentals",
     "address": "987 Example Road, Dnipro, Ukraine",
     "rentalConditions": "Minimum age: 25\nValid driver's license\nSecurity deposit and insurance required",
-    "mileage": 6618
+    "mileage": 6618,
+    "favorite": true
   },
   {
     "id": "9618",
@@ -617,11 +640,12 @@
       "Terrain Response 2 system",
       "Power-operated gesture tailgate"
     ],
-    "rentalPrice": "$300",
+    "rentalPrice": "300",
     "rentalCompany": "Luxury SUV Rentals",
     "address": "654 Example Street, Lviv, Ukraine",
     "rentalConditions": "Minimum age: 25\nValid driver's license\nSecurity deposit and insurance required",
-    "mileage": 4856
+    "mileage": 4856,
+    "favorite": false
   },
   {
     "id": "9632",
@@ -643,10 +667,11 @@
       "Electronic Stability Control",
       "Rearview camera"
     ],
-    "rentalPrice": "$50",
+    "rentalPrice": "50",
     "rentalCompany": "Economy Car Rentals",
     "address": "321 Example Lane, Kharkiv, Ukraine",
     "rentalConditions": "Minimum age: 21\nValid driver's license\nSecurity deposit and insurance required",
-    "mileage": 6234
+    "mileage": 6234,
+    "favorite": false
   }
 ]
