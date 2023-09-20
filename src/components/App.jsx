@@ -9,7 +9,7 @@ export const App = () => {
   const [searchQuery, setSearchQuery] = useState({});
 
   const searchHendler = values => {
-    console.log('search values', values);
+    // console.log('search values', values);
     setSearchQuery(values);
   };
   return (
